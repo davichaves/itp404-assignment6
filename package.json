@@ -1,7 +1,7 @@
 {
-  "name": "itp404-assignment6",
+  "name": "crud-in-class",
   "version": "0.0.0",
-  "description": "Small description for itp404-assignment6 goes here",
+  "description": "Small description for crud-in-class goes here",
   "private": true,
   "directories": {
     "doc": "doc",

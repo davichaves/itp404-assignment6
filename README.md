@@ -1,4 +1,4 @@
-# Itp404-assignment6
+# Crud-in-class
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
@@ -16,7 +16,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd itp404-assignment6`
+* `cd crud-in-class`
 * `npm install`
 * `bower install`
 

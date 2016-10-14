@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'itp404-assignment6',
+    modulePrefix: 'crud-in-class',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
