@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       var price = this.get('price');
       var createdBy = this.get('createdBy');
 
-      var promise = $.ajax({
+      var promise = Ember.$.ajax({
         type: 'post',
         url: 'http://itp-api.herokuapp.com/api/songs',
         data: {
