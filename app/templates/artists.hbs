@@ -1,6 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
+      <br>
+      <br>
+      <h1>{{#link-to "artists.new"}}New Artist{{/link-to}}</h1>
+      <br>
+      <br>
       {{#each model.artists as |artist|}}
         <div>
           {{#link-to 'artists.artist' artist.id}}
