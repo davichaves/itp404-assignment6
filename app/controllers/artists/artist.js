@@ -20,30 +20,11 @@ export default Ember.Controller.extend({
         }
       });
 
-      // var controller = this;
-      // // console.log('controller', this);
-      // promise.then(function() {
-      //   // alert('yay');
-      //   // console.log('inside funciton', this);
-      //   controller.set('songName', null);
-      //   controller.set('price', null);
-      //   controller.set('createdBy', null);
-      // }, function() {
-      //   alert('error');
-      // });
-
-      // OR
       promise.then((response) => {
-        console.log(this);
         this.set('songName', null);
         this.set('price', null);
         this.set('createdBy', null);
         var songs = this.get('model.songs');
-        console.log(response);
-        // songs.pushObject(response.song);
-        //
-        // OR
-        //
         var newSongs = songs.concat(response.song);
         this.set('model.songs', newSongs);
       }, function() {
@@ -52,15 +33,3 @@ export default Ember.Controller.extend({
     }
   }
 });
-
-// Array.prototype.pushObject = function() {
-//   // notify ember that data has changed so that it can rerender
-//   array.push(value)
-// }
-
-
-
-
-// $('form').on('submit', function(e) {
-//   e.preventDefault();
-// })
