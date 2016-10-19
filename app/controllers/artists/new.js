@@ -28,17 +28,16 @@ export default Ember.Controller.extend({
 
       // OR
       promise.then((response) => {
-        this.set('songName', null);
-        this.set('price', null);
-        this.set('createdBy', null);
-        var songs = this.get('model.songs');
-        // console.log(response);
-        // songs.pushObject(response.song);
+        console.log(this);
+        this.set('artistName', null);
+        var artists = this.get('model.artists');
+        console.log(response);
+        artists.pushObject(response.artist);
         //
         // OR
         //
-        var newSongs = songs.concat(response.song);
-        this.set('model.songs', newSongs);
+        // var newSongs = songs.concat(response.song);
+        // this.set('model.songs', newSongs);
       }, function() {
         alert('error');
       });

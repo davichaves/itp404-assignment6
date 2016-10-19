@@ -34,11 +34,12 @@ export default Ember.Controller.extend({
 
       // OR
       promise.then((response) => {
+        console.log(this);
         this.set('songName', null);
         this.set('price', null);
         this.set('createdBy', null);
         var songs = this.get('model.songs');
-        // console.log(response);
+        console.log(response);
         // songs.pushObject(response.song);
         //
         // OR
